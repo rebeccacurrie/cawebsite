@@ -38,10 +38,14 @@
   }
 }
 
-body {
-  font-family: "Caveat", cursive;
-}
-
-.font-caveat {
-  font-family: "Caveat", cursive;
+@layer base {
+  body {
+    font-family: var(--font-caveat), cursive;
+    background-color: hsl(var(--background));
+    background-image: 
+      radial-gradient(circle at center, hsl(150 50% 96%) 0, transparent 1px),
+      radial-gradient(circle at center, hsl(150 50% 96%) 0, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
 }
