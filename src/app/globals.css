@@ -4,6 +4,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 150 50% 98%;    /* Light green background */
+    --foreground: 150 50% 10%;    /* Dark green text */
+    
+    --primary: 150 50% 50%;       /* Medium green */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 60 50% 50%;      /* Medium yellow */
+    --secondary-foreground: 0 0% 100%;
+    
+    --card: 150 50% 98%;
+    --card-foreground: 150 50% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 50% 10%;
+    
+    --muted: 150 20% 90%;
+    --muted-foreground: 150 20% 40%;
+    
+    --accent: 60 50% 90%;         /* Light yellow */
+    --accent-foreground: 60 50% 10%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 150 20% 90%;
+    --input: 150 20% 90%;
+    --ring: 150 50% 50%;
+    
+    --radius: 0.5rem;
+  }
+}
+
 body {
   font-family: "Caveat", cursive;
 }
