@@ -1,6 +1,5 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Caveat } from "next/font/google"
 import type React from "react"
 import Link from "next/link"
 import { Calendar, Mail, MapPin, Phone } from "lucide-react"
