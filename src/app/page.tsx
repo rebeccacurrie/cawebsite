@@ -6,8 +6,6 @@ import Link from "next/link"
 import { Calendar, Mail, MapPin, Phone } from "lucide-react"
 import Image from "next/image"
 
-const caveat = Caveat({ subsets: ["latin"] })
-
 export const metadata: Metadata = {
   title: "Rebecca Currie - Community Assistant",
   description: "Bulletin board for Hennepin Hall, 3rd Floor",
