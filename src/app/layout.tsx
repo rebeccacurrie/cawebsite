@@ -11,7 +11,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "Rebecca Currie - Community Assistant",
-  description: "Bulletin board for Hennepin Hall, 3rd Floor",
+  description: "Bulletin board for Ryan Hall, 3rd Floor",
 }
 
 export default function RootLayout({

@@ -7,46 +7,46 @@ import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Rebecca Currie - Community Assistant",
-  description: "Bulletin board for Hennepin Hall, 3rd Floor",
+  description: "Bulletin board for Ryan Hall, 3rd Floor",
 }
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background p-8">
-      <main className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+      <main className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden border border-primary/10">
         <header className="bg-primary text-primary-foreground p-6 text-center relative overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/background.jpg"
+                              src="/pool.jpeg"
               alt="Header Background"
               fill
-              className="object-cover opacity-40"
+              className="object-cover"
               priority
             />
           </div>
           <div className="relative z-10">
             <div className="flex items-center justify-center mb-4">
               <Image
-                src="/mugshot.jpg"
+                src="/profile.jpg"
                 alt="Rebecca Currie"
                 width={150}
                 height={150}
-                className="rounded-full border-4 border-white shadow-lg"
+                className="rounded-full border-4 border-white shadow-xl ring-4 ring-primary/20"
                 priority
               />
             </div>
             <h1 className="text-6xl font-bold mb-3">Rebecca Currie</h1>
             <h2 className="text-4xl mb-2">Community Assistant</h2>
-            <p className="text-2xl">Hennepin Hall, 3rd Floor, Room 312</p>
+            <p className="text-2xl">Ryan Hall, 3rd Floor, Room 337</p>
           </div>
         </header>
 
         <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <section className="bg-primary/10 p-4 rounded-lg shadow relative">
+          <section className="bg-primary/5 p-6 rounded-xl shadow-lg relative border border-primary/10">
             <h3 className="text-3xl font-bold mb-4">Book a CA Chat</h3>
             <p className="mb-4 text-xl">Need to talk? Book a chat with me using my Google Calendar!</p>
             <Link
-              href="https://calendar.google.com/calendar/embed?src=ra13curr@siena.edu"
+              href="https://calendar.app.google/K8in6hgmYiD33sUX9"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors inline-flex items-center text-xl"
@@ -63,7 +63,7 @@ export default function Home() {
             />
           </section>
 
-          <section className="bg-accent/20 p-4 rounded-lg shadow relative">
+          <section className="bg-accent/30 p-6 rounded-xl shadow-lg relative border border-accent/20">
             <h3 className="text-3xl font-bold mb-4">About Rebecca</h3>
             <ul className="grid grid-cols-1 gap-6 text-xl">
               <li>
@@ -73,10 +73,10 @@ export default function Home() {
                 <span className="font-bold">Hometown:</span> Johannesburg, South Africa
               </li>
               <li>
-                <span className="font-bold">Sports:</span> Water Polo Team
+                <span className="font-bold">Sports:</span> Water Polo
               </li>
               <li>
-                <span className="font-bold">Favorite Book:</span> &ldquo;Where the Crawdads Sing&rdquo;
+                <span className="font-bold">Currently Reading:</span> &ldquo;Hamnet&rdquo; by Maggie O&apos;Farrell
               </li>
             </ul>
             <Image
@@ -88,12 +88,12 @@ export default function Home() {
             />
           </section>
 
-          <section className="bg-accent p-4 rounded-lg shadow relative">
+          <section className="bg-secondary/15 p-6 rounded-xl shadow-lg relative border border-secondary/20">
             <h3 className="text-3xl font-bold mb-4">Reminders</h3>
             <ul className="list-disc list-inside text-xl space-y-2">
-              <li>Floor meeting this Thursday at 7 PM</li>
-              <li>Quiet hours start at 10 PM</li>
-              <li>Remember to sign up for next month&apos;s activities!</li>
+              <li>Housing numbers have been issued, add your roommates for next year on the Siena housing portal</li>
+              <li>Quiet hours start at 10 PM on weekdays, please respect others</li>
+              <li>Don&apos;t throw personal trash in the floor restroom</li>
             </ul>
             <Image
               src="/stickers/sticker7.png"
@@ -104,36 +104,64 @@ export default function Home() {
             />
           </section>
 
-          <section className="bg-secondary/20 p-4 rounded-lg shadow relative">
+          <section className="bg-accent/25 p-6 rounded-xl shadow-lg relative border border-accent/30">
             <h3 className="text-3xl font-bold mb-4">Motivation</h3>
             <blockquote className="italic text-2xl">
-              &ldquo;The only way to do great work is to love what you do.&rdquo; - Steve Jobs
+              &ldquo;Don&apos;t leave your key to happiness in someone else&apos;s pocket.&rdquo; - Swami Chinmayananda
             </blockquote>
           </section>
 
-          <section className="bg-primary/10 p-4 rounded-lg shadow relative col-span-full">
-            <h3 className="text-3xl font-bold mb-4">DORS Values</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xl">
+          <section className="bg-primary/5 p-6 rounded-xl shadow-lg relative col-span-full border border-primary/10">
+            <div className="flex items-center gap-4 mb-6">
+              <Image
+                src="/pickle.svg"
+                alt="PIICL Pickle"
+                width={60}
+                height={120}
+                className="drop-shadow-md"
+              />
               <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">Diversity</h4>
-                <p>Embracing and celebrating our unique backgrounds and perspectives.</p>
+                <h3 className="text-3xl font-bold">Siena Core Values</h3>
+                <p className="text-2xl font-semibold text-primary">PIICL</p>
               </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">Optimism</h4>
-                <p>Maintaining a positive outlook and encouraging growth mindset.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xl">
+              <div className="bg-white/60 p-4 rounded-lg border border-primary/10">
+                <h4 className="text-2xl font-bold text-primary mb-2">
+                  <span className="text-3xl">P</span>erson-Centered
+                </h4>
+                <p>Putting people first and valuing every individual in our community.</p>
               </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">Respect</h4>
-                <p>Fostering a community of mutual understanding and consideration.</p>
+              <div className="bg-white/60 p-4 rounded-lg border border-primary/10">
+                <h4 className="text-2xl font-bold text-primary mb-2">
+                  <span className="text-3xl">I</span>nnovation
+                </h4>
+                <p>Embracing creativity and new ideas to grow and improve together.</p>
               </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">Service</h4>
-                <p>Dedicated to supporting and uplifting our residential community.</p>
+              <div className="bg-white/60 p-4 rounded-lg border border-primary/10">
+                <h4 className="text-2xl font-bold text-primary mb-2">
+                  <span className="text-3xl">I</span>nclusivity
+                </h4>
+                <p>Creating a welcoming space where everyone belongs and is respected.</p>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6 text-xl mt-6 justify-center">
+              <div className="bg-white/60 p-4 rounded-lg border border-primary/10 md:w-1/3">
+                <h4 className="text-2xl font-bold text-primary mb-2">
+                  <span className="text-3xl">C</span>ommunity-Driven
+                </h4>
+                <p>Building strong connections and supporting one another as a community.</p>
+              </div>
+              <div className="bg-white/60 p-4 rounded-lg border border-primary/10 md:w-1/3">
+                <h4 className="text-2xl font-bold text-primary mb-2">
+                  <span className="text-3xl">L</span>ifelong Learning
+                </h4>
+                <p>Committing to continuous growth, curiosity, and education beyond the classroom.</p>
               </div>
             </div>
           </section>
 
-          <section className="bg-secondary/10 p-4 rounded-lg shadow relative col-span-full">
+          <section className="bg-secondary/10 p-6 rounded-xl shadow-lg relative col-span-full border border-secondary/15">
             <h3 className="text-3xl font-bold mb-4">Send Me a Message</h3>
             <p className="text-xl mb-4">Have a suggestion or something to share? Let me know!</p>
             <form 
@@ -201,13 +229,19 @@ export default function Home() {
             <Mail className="mr-3 h-6 w-6" /> ra13curr@siena.edu
           </Link>
           <span className="hidden md:inline text-xl">•</span>
-          <Link href="tel:+15185283618" className="flex items-center hover:text-primary-foreground/80 text-xl">
-            <Phone className="mr-3 h-6 w-6" /> (518) 528-3618
-          </Link>
-          <span className="hidden md:inline text-xl">•</span>
+
           <span className="flex items-center text-xl">
-            <MapPin className="mr-3 h-6 w-6" /> Room 312
+            <MapPin className="mr-3 h-6 w-6" /> Room 337
           </span>
+          <span className="hidden md:inline text-xl">•</span>
+          <Link
+            href="https://wa.me/15185280562"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-primary-foreground/80 text-xl"
+          >
+            <Phone className="mr-3 h-6 w-6" /> WhatsApp
+          </Link>
         </footer>
       </main>
     </div>

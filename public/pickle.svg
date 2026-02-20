@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="200" height="400">
+  <!-- Pickle body -->
+  <ellipse cx="100" cy="200" rx="65" ry="170" fill="#5a8c32" transform="rotate(-5, 100, 200)"/>
+  <!-- Darker shading -->
+  <ellipse cx="115" cy="200" rx="40" ry="160" fill="#4a7a28" opacity="0.4" transform="rotate(-5, 100, 200)"/>
+  <!-- Highlight -->
+  <ellipse cx="78" cy="190" rx="18" ry="120" fill="#7ab648" opacity="0.5" transform="rotate(-5, 100, 200)"/>
+  <!-- Bumps -->
+  <circle cx="75" cy="120" r="8" fill="#4a7a28" opacity="0.3"/>
+  <circle cx="110" cy="150" r="7" fill="#4a7a28" opacity="0.3"/>
+  <circle cx="85" cy="190" r="9" fill="#4a7a28" opacity="0.3"/>
+  <circle cx="115" cy="230" r="7" fill="#4a7a28" opacity="0.3"/>
+  <circle cx="90" cy="270" r="8" fill="#4a7a28" opacity="0.3"/>
+  <circle cx="110" cy="310" r="6" fill="#4a7a28" opacity="0.3"/>
+  <!-- Stem -->
+  <ellipse cx="95" cy="32" rx="12" ry="8" fill="#3d6b22"/>
+  <rect x="91" y="28" width="8" height="15" fill="#3d6b22" rx="3"/>
+  <!-- Eyes -->
+  <ellipse cx="82" cy="170" rx="12" ry="14" fill="white"/>
+  <ellipse cx="118" cy="168" rx="12" ry="14" fill="white"/>
+  <circle cx="85" cy="172" r="6" fill="#2d2d2d"/>
+  <circle cx="121" cy="170" r="6" fill="#2d2d2d"/>
+  <circle cx="87" cy="170" r="2.5" fill="white"/>
+  <circle cx="123" cy="168" r="2.5" fill="white"/>
+  <!-- Smile -->
+  <path d="M 78 195 Q 100 220 122 195" stroke="#2d2d2d" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <ellipse cx="70" cy="192" rx="8" ry="5" fill="#e8a0a0" opacity="0.4"/>
+  <ellipse cx="130" cy="190" rx="8" ry="5" fill="#e8a0a0" opacity="0.4"/>
+</svg>

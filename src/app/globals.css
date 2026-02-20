@@ -6,35 +6,35 @@
 
 @layer base {
   :root {
-    --background: 150 50% 98%;    /* Light green background */
-    --foreground: 150 50% 10%;    /* Dark green text */
+    --background: 210 40% 96%;    /* Light cream/off-white */
+    --foreground: 210 30% 15%;    /* Deep navy text */
     
-    --primary: 150 50% 50%;       /* Medium green */
+    --primary: 210 100% 25%;      /* Classic navy blue */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 60 50% 50%;      /* Medium yellow */
+    --secondary: 345 75% 55%;     /* Coral/salmon pink */
     --secondary-foreground: 0 0% 100%;
     
-    --card: 150 50% 98%;
-    --card-foreground: 150 50% 10%;
+    --card: 210 40% 98%;
+    --card-foreground: 210 30% 15%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 150 50% 10%;
+    --popover-foreground: 210 30% 15%;
     
-    --muted: 150 20% 90%;
-    --muted-foreground: 150 20% 40%;
+    --muted: 210 20% 90%;
+    --muted-foreground: 210 20% 40%;
     
-    --accent: 60 50% 90%;         /* Light yellow */
-    --accent-foreground: 60 50% 10%;
+    --accent: 200 85% 85%;        /* Light blue/aqua */
+    --accent-foreground: 210 30% 15%;
     
     --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 150 20% 90%;
-    --input: 150 20% 90%;
-    --ring: 150 50% 50%;
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 210 100% 25%;
     
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -43,9 +43,11 @@
     font-family: var(--font-caveat), cursive;
     background-color: hsl(var(--background));
     background-image: 
-      radial-gradient(circle at center, hsl(150 50% 96%) 0, transparent 1px),
-      radial-gradient(circle at center, hsl(150 50% 96%) 0, transparent 1px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+      linear-gradient(45deg, hsl(210 40% 98%) 25%, transparent 25%),
+      linear-gradient(-45deg, hsl(210 40% 98%) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, hsl(210 40% 98%) 75%),
+      linear-gradient(-45deg, transparent 75%, hsl(210 40% 98%) 75%);
+    background-size: 30px 30px;
+    background-position: 0 0, 0 15px, 15px -15px, -15px 0px;
   }
 }
