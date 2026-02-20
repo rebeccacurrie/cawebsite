@@ -57,9 +57,9 @@ export default function Home() {
             <Image
               src="/stickers/sticker18.png"
               alt="Decorative Sticker"
-              width={100}
-              height={100}
-              className="absolute bottom-8 right-8 transform rotate-12"
+              width={80}
+              height={80}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:bottom-8 md:right-8 transform rotate-12"
             />
           </section>
 
@@ -82,9 +82,9 @@ export default function Home() {
             <Image
               src="/stickers/sticker5.png"
               alt="Decorative Sticker"
-              width={80}
-              height={80}
-              className="absolute top-4 right-12 transform -rotate-12 -scale-x-100"
+              width={60}
+              height={60}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:top-4 md:right-12 transform -rotate-12 -scale-x-100"
             />
           </section>
 
@@ -98,9 +98,9 @@ export default function Home() {
             <Image
               src="/stickers/sticker7.png"
               alt="Decorative Sticker"
-              width={70}
-              height={70}
-              className="absolute top-3 right-32 transform rotate-12"
+              width={60}
+              height={60}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:top-3 md:right-32 transform rotate-12"
             />
           </section>
 
@@ -109,6 +109,13 @@ export default function Home() {
             <blockquote className="italic text-2xl">
               &ldquo;Don&apos;t leave your key to happiness in someone else&apos;s pocket.&rdquo; - Swami Chinmayananda
             </blockquote>
+            <Image
+              src="/stickers/sticker10.png"
+              alt="Decorative Sticker"
+              width={60}
+              height={60}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:bottom-3 md:right-4 transform rotate-6"
+            />
           </section>
 
           <section className="bg-primary/5 p-6 rounded-xl shadow-lg relative col-span-full border border-primary/10">
@@ -159,6 +166,40 @@ export default function Home() {
                 <p>Committing to continuous growth, curiosity, and education beyond the classroom.</p>
               </div>
             </div>
+          </section>
+
+          <section className="bg-accent/20 p-6 rounded-xl shadow-lg relative col-span-full border border-accent/20">
+            <h3 className="text-3xl font-bold mb-4">Important Contacts</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xl">
+              <Link href="tel:+15187832999" className="bg-white/60 p-4 rounded-lg border border-accent/20 flex items-center gap-3 hover:bg-white/80 transition-colors">
+                <Phone className="h-8 w-8 text-primary shrink-0" />
+                <div>
+                  <h4 className="text-2xl font-bold">Public Safety</h4>
+                  <p>(518) 783-2999</p>
+                </div>
+              </Link>
+              <Link href="tel:+15187832554" className="bg-white/60 p-4 rounded-lg border border-accent/20 flex items-center gap-3 hover:bg-white/80 transition-colors">
+                <Phone className="h-8 w-8 text-primary shrink-0" />
+                <div>
+                  <h4 className="text-2xl font-bold">Health Services</h4>
+                  <p>(518) 783-2554</p>
+                </div>
+              </Link>
+              <Link href="tel:+15187836209" className="bg-white/60 p-4 rounded-lg border border-accent/20 flex items-center gap-3 hover:bg-white/80 transition-colors">
+                <Phone className="h-8 w-8 text-primary shrink-0" />
+                <div>
+                  <h4 className="text-2xl font-bold">Counseling</h4>
+                  <p>(518) 783-6209</p>
+                </div>
+              </Link>
+            </div>
+            <Image
+              src="/stickers/sticker9.png"
+              alt="Decorative Sticker"
+              width={70}
+              height={70}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:top-4 md:right-6 transform -rotate-12"
+            />
           </section>
 
           <section className="bg-secondary/10 p-6 rounded-xl shadow-lg relative col-span-full border border-secondary/15">
@@ -214,9 +255,9 @@ export default function Home() {
             <Image
               src="/stickers/sticker19.png"
               alt="Decorative Sticker"
-              width={90}
-              height={90}
-              className="absolute top-6 right-8 transform -rotate-12"
+              width={70}
+              height={70}
+              className="mt-4 mx-auto md:mt-0 md:mx-0 md:absolute md:top-6 md:right-8 transform -rotate-12"
             />
           </section>
         </div>
