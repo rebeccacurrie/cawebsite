@@ -46,7 +46,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold mb-4">Book a CA Chat</h3>
             <p className="mb-4 text-xl">Need to talk? Book a chat with me using my Google Calendar!</p>
             <Link
-              href="https://calendar.app.google/K8in6hgmYiD33sUX9"
+              href="https://calendar.app.google/fGnDFUxhsSrsAyh28"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors inline-flex items-center text-xl"
